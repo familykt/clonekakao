@@ -1,0 +1,54 @@
+.top-header{
+    background-color: #523737;
+    color: white;
+    padding: 5px 10px 15px 10px;
+    position: fixed;
+    width: 100%;
+    top:0;
+
+}
+
+.top-header .header__top,
+.top-header .header__bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*바깥(아래) 간격*/
+.top-header .header__top{
+    margin-bottom: 15px;
+    font-size: 12px;
+}
+
+.top-header .header__bottom{
+    margin: 0 10px;
+}
+
+/*컬럼이 3개니까 33퍼센트로 좌우정렬*/
+.top-header .header__column{
+    width: 33%;
+}
+
+/*컬럼의 마지막 요소들을 오른쪽으로 정렬*/
+.top-header .header__column:last-child{
+    text-align: right;
+}
+/*컬럼의 가운데 요소들을 가운데 정렬*/
+.top-header .header__column:nth-child(2){
+    text-align: center;
+}
+/*Friend 1에서 1을 노란색으로*/
+.top-header .header__number{
+    color: yellow;
+}
+
+/* 헤더 컬럼의 첫번째의 색깔을 설정 */
+.top-header .header__bottom .header__column:first-child{
+    color: rgba(255,255,255,0.5);
+    
+}
+/* 헤더 탑과 바텀 사이에 간격을 조정*/
+.top-header .header__top{
+    margin-bottom: 15px;
+    font-size: 12px;
+}

@@ -1,0 +1,42 @@
+/* 파인드 옵션들의 아이콘들에 대해 플렉 박스 정렬 */
+.find .find__options{
+    background-color: #eeeeee;
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+/* 아이콘과 문자열에 대해 수직 정렬 */ 
+.find__options .find__option{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 10px;
+    color: #523737;
+
+}
+/* 아이콘 외부(하단) 간격 */
+.find__option i {
+    margin-bottom: 10px;
+}
+/* 옵션 타이틀 글씨 크기*/
+.find__option span{
+    font-size: 12px;
+}
+/* 문자열 Recommended Friends*에 대해 간격 조정 */
+.find__recommended header{
+    border-bottom: 1px solid #ebebeb;
+    padding: 5px 10px;
+    font-size: 12px;
+    color: #b4b4b4;
+}
+/* 마지막 문자열 css 적용 */
+
+.recommended__none{
+    padding: 20px 0;
+    text-align:center;
+    border-bottom:  1px solid #ebebeb;
+    color: #b4b4b4;
+    font-size: 14px;
+}

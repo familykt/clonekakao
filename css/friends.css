@@ -1,0 +1,44 @@
+.friends__section .friends__section-header{
+    border-top:  1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    padding: 10px 15px;
+    font-size: 12px;
+    color: #b4b4b4;
+    }
+
+    /* 플렉스 설정인  align-items: center는 쉽게 말하면 세로 정렬에서 가운데 교차축을 중심으로 정렬하는 속성값 */
+.friends__section-rows .friends__section-row{
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+    /*아바타 넓이, 둥글기, 오른쪽 여백을 조정*/
+.friends__section-row img {
+    width : 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+    /*교차축 센터 정렬*/
+.friends__section-column{
+    display: flex;
+    align-items: center;
+}
+    /*링크 걸린 이름에 밑줄 없애기, 글씨색 : 검은색*/
+.friends__section-row a{
+    text-decoration: none;
+    color: inherit;
+}
+    /*상태메세지가 있는 유저 프로필 간격 조정, width-tagline 클래스 추가*/
+.friends__section-row.width-tagline{
+    justify-content: space-between;
+}
+    /*상태메세지에 css 적용*/
+.friends__section-tagline{
+    font-size: 10px;
+    background: #f0f0f0;
+    padding: 10px 10px;
+    border-radius: 5px;
+    color: #939393;
+}

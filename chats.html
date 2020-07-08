@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-compatible" content="ie=edge">
     <title>chats</title>
+    <link rel="stylesheet" href="css/style.css"> 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 </head>
 <body>
-    <header>
+    <header class="top-header">
         <div class="header__top">
             <div class="header__column">
                 <i class="fas fa-fighter-jet"></i>
@@ -44,11 +45,11 @@
             <input type="text" placeholder="find friends, chats, Plus Friends">
         </div>
 
-        <ul class="chat__list">
+        <ul class="chats__list">
             <li class="chats__chat">
                 <a href="chat.html">
-                    <div class="chat_content">
-                        <img src="" alt=""> avatar
+                    <div class="chat__content">
+                        <img src="images/chiro.jpg" alt="">
                         <div class="chat__preview">
                             <h3 class="chat__user">Mami</h3>
                             <span class="chat__last-message">Mami loves Chiro</span>
@@ -61,8 +62,8 @@
             </li>
             <li class="chats__chat">
                 <a href="chat.html">
-                    <div class="chat_content">
-                        <img src="" alt="">avatar
+                    <div class="chat__content">
+                        <img src="images/avatar.jpg" alt="">
                         <div class="chat__preview">
                             <h3 class="chat__user">KakaoTalk</h3>
                             <span class="chat__last-message">You logged into KakaoTalk PC</span>
@@ -72,7 +73,7 @@
                 </a>
             </li>
         </ul>
-        <div class="chat_btn">
+        <div class="chat-btn">
             <i class="fa fa-comment"></i>
         </div>
     </main>
@@ -84,7 +85,7 @@
             <i class="fa fa-user"></i>
             <span class="tab-bar__title">Friends</span>
         </a>
-        <a href="chats.html" class="tab-bar__tab">
+        <a href="chats.html" class="tab-bar__tab tab-bar__tab--selected">
             <i class="fa fa-comment"></i>
             <span class="tab-bar__title">Chats</span>
         </a>
