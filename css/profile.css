@@ -1,0 +1,79 @@
+.top-header--transparent{
+    background-color: transparent;
+}
+
+.profile .profile__header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    background-image: url("https://www.sketchappsources.com/resources/source-images-plus2/material-design-icon-patterns-2.png");
+    background-size: 100%;
+    /* 배경 이미지 방향 바꾸기*/
+    /* 배경으로 헤더 겹치기, 헤더.css에서*/
+    /*z-index로 헤더가 보이도록 수정해야 함*/
+    background-position: center center;
+    width: 100%;
+    /*상위인 profile과 릴레티브 관계 (브라우저에서 ctrl + shift + c로 확인 */
+    position: relative;
+    top: -60px;
+    justify-content: flex-end;
+}
+
+/* 헤더와 릴레티브 바닥보다 더 내려가게 */
+/* 양수면 헤더 선위로 올라온다.*/
+/* ctrl + shift+ C 를 누른 뒤 브라우저에서 헤더 영역 탐색 가능*/
+
+.profile__header .profile__header-container{
+    text-align: center;
+    position: relative;
+    bottom: -60px;
+}
+
+/* 가운데 이미지에 대해 크기 및 마진 적용 */
+.profile__header-container img{
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* 최하단 콘테이너 플렉스 박스 적용*/
+.profile .profile__container{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile__container input{
+    padding: 5px;
+    margin-bottom: 20px;
+}
+/* 하단 컨테이너의 아이콘과 이름에 대해 플렉박스 적용 */
+/* profile__actions의 하위 요소인 profile__action들에 대해 */
+.profile__action{
+    display: flex;
+}
+
+/* 하단 콘테이너의 이미지 아이콘과 문자열에 대해 플렉박스 적용*/
+.profile__action{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 15px;
+    cursor: pointer;
+}
+/* 아이콘 꾸미기 */
+.profile__action-circle{
+    background-color:#f2f2f2;
+    padding: 15px;
+    border-radius: 50%;
+    color: #523737;
+    margin-bottom: 15px;
+}
+/* 하단 콘테이너 글씨 */
+.profile__action-title{
+    font-size: 12px;
+    font-weight: 600;
+}
+

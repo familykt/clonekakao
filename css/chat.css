@@ -1,0 +1,265 @@
+/* 헤더 */ 
+
+/* chat의 헤더 클래스에 chat-header를 추가 배경색을 바꾼다.  */ 
+
+.chat-header { 
+
+    background-color: #a1c0d6; 
+  
+    color: black; 
+  
+  } 
+  
+   
+  
+  /* 밑줄 색깔 수정 */ 
+  
+  .chat-header { 
+  
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+  
+  } 
+  
+   
+  
+  /* 메인 영역  */ 
+  
+  .chat { 
+  
+    background-color: #a1c0d6; 
+  
+    height: 100vh; 
+  
+    padding-top: 15px; 
+  
+    padding-left: 5px; 
+  
+    padding-right: 5px; 
+  
+  } 
+  
+   
+  
+  /* Wednesday, August,2 2017에 대해 
+  
+  text-align,font-size margin-bottom등을 설정 */ 
+  
+  .chat .date-divider { 
+  
+    text-align: center; 
+  
+    font-size: 12px; 
+  
+    color: rgba(0, 0, 0, 0.5); 
+  
+    margin-bottom: 15px; 
+  
+  } 
+  
+   
+  
+  /* 첫번째 채팅에 대해 플렉스 정렬 */ 
+  
+  .chat__message { 
+  
+    margin-bottom: 10px; 
+  
+    display: flex; 
+  
+    /* align-items: flex-end; */ 
+  
+  } 
+  
+  .chat__message-from-me { 
+  
+    justify-content: flex-end; 
+  
+  } 
+  
+  /* 시간에 css 적용 */ 
+  
+  .chat__message-time { 
+  
+    font-size: 10px; 
+  
+    color: rgba(0, 0, 0, 0.5); 
+  
+  } 
+  
+   
+  
+  /* 채팅 바디(첫번째 메세지 )  */ 
+  
+  .chat__message-from-me .chat__message-body { 
+  
+    background-color: #ffe934; 
+  
+    margin-left: 5px; 
+  
+  } 
+  
+   
+  
+  /* 메세지 바디 (답변)  */ 
+  
+  .chat__message-body { 
+  
+    padding: 10px 5px; 
+  
+    border-radius: 5px; 
+  
+    background-color: #ffffff; 
+  
+    margin-right: 5px; 
+  
+  } 
+  
+  /* 답변 메세지의 아바타 */ 
+  
+  .chat__message--to-me img { 
+  
+    height: 35px; 
+  
+    border-radius: 50%; 
+  
+    margin-right: 10px; 
+  
+  } 
+  
+   
+  
+  /* 채팅 메세지 유저 이름 */ 
+  
+  .chat__message .chat__message-username { 
+  
+    font-size: 12px; 
+  
+    font-weight: 600; 
+  
+    margin-bottom: 5px; 
+  
+  } 
+  
+   
+  
+  /* 채팅 메시지와 이름에 대해 플렉스 박스 적용 */ 
+  
+  .chat__message-center { 
+  
+    display: flex; 
+  
+    flex-direction: column; 
+  
+  } 
+  
+   
+  
+  /* 하단 입력 바 전체 */ 
+  
+  .type-message { 
+  
+    width: 100%; 
+  
+    bottom: 0; 
+  
+    position: fixed; 
+  
+    height: 45px; 
+  
+    background-color: #eeeeee; 
+  
+    display: flex; 
+  
+    justify-content: space-between; 
+  
+    align-items: center; 
+  
+    padding-left: 10px; 
+  
+    padding-right: 5px; 
+  
+  } 
+  
+   
+  
+  /* 바디에 클래스 부여 , body-chat */ 
+  
+  .body-chat { 
+  
+    padding-bottom: 0; 
+  
+  } 
+  
+   
+  
+  /* 하단 플러스 아이콘 색깔*/ 
+  
+  .type-message .fa-plus { 
+  
+    color: #b4b4b4; 
+  
+  } 
+  
+   
+  
+  /* 하단 인풋 박스와 마이크를 포함하는 태그  */ 
+  
+  .type-message__input { 
+  
+    width: 100%; 
+  
+    display: flex; 
+  
+    align-items: center; 
+  
+    position: relative; 
+  
+  } 
+  
+   
+  
+  /* 하단의 인풋 입력 박스  */ 
+  
+  .type-message input { 
+  
+    width: 100%; 
+  
+    padding: 10px; 
+  
+    margin-right: 20px; 
+  
+  } 
+  
+   
+  
+  /* 스마일 아이콘을 인풋 박스 내로 위치시키기 위한 포지션 absolute 설정 */ 
+  
+  /* right속성으로 위치를 조정 */ 
+  
+  .type-message__input .fa-smile { 
+  
+    position: absolute; 
+  
+    right: 58px; 
+  
+    color: #b4b4b4; 
+  
+    padding: 5px; 
+  
+  } 
+  
+   
+  
+  /* 패딩으로 크기 조절, 색깔 조절 */ 
+  
+  .type-message__input .record-message { 
+  
+    color: #523737; 
+  
+    background-color: #ffe934; 
+  
+    padding: 10px; 
+  
+    cursor: pointer; 
+  
+  } 
